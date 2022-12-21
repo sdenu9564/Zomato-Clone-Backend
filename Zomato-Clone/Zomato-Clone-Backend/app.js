@@ -17,7 +17,7 @@ app.use(express.json());
 app.use('/',routes);
 
 
-mongoose.connect('mongodb+srv://Sdenu9564:manna1999@cluster0.otll1.mongodb.net/Zomatodata?retryWrites=true&w=majority',
+mongoose.connect('your mongodb url',
 { useNewUrlParser: true, useUnifiedTopology: true }
 ).then(res=>{
     app.listen(port,host,()=>{
